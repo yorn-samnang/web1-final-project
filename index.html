@@ -7,29 +7,169 @@
 <body>
 
 <header>
-  <h1>Kamsan</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="destinations.html">Destinations</a>
-    <a href="food.html">Food</a>
-    <a href="things-to-do.html">Things To Do</a>
-    <a href="travel-guide.html">Travel Guide</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-shell">
+    <a href="index.html" class="brand-mark" aria-label="Kamsan home"></a>
+    <div class="nav-pill">
+      <div class="brand-copy">
+        <a href="index.html" class="brand-title">Kamsan</a>
+        <span class="brand-tagline">Cambodia Travel Guide</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="food.html">Food</a>
+        <a href="things-to-do.html">Things to Do</a>
+        <a href="travel-guide.html">Travel Guide</a>
+        <a href="contact.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h2>Welcome to Cambodia</h2>
-  <p>Explore destinations, food, and culture.</p>
+<main>
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="eyebrow">Kamsan Cambodia</p>
+      <h1>Discover the spirit of Cambodia through places, flavors, and culture.</h1>
+      <p class="hero-text">Plan your journey with curated destinations, Khmer food highlights, local experiences, and practical travel advice designed for first-time visitors.</p>
 
-  <div class="card">Top Destinations</div>
-  <div class="card">Popular Food</div>
-  <div class="card">Things To Do</div>
-</section>
+      <form class="search-panel" action="destinations.html" method="get">
+        <div class="search-intro">
+          <p class="search-kicker">Trip Planner</p>
+          <h2>Build your Cambodia itinerary in one place</h2>
+          <p>Pick a destination, choose your travel style, and start with the guide that fits your trip best.</p>
+        </div>
 
-<footer>
-  <p>© 2026 Kamsan</p>
+        <div class="search-grid">
+          <label class="search-field" for="search-destination">
+            <span class="field-label">Where to explore</span>
+            <input id="search-destination" name="destination" type="text" placeholder="Siem Reap, Koh Rong, Kampot">
+          </label>
+
+          <label class="search-field" for="search-interest">
+            <span class="field-label">What interests you</span>
+            <input id="search-interest" name="interest" type="text" placeholder="Temples, food, beaches, culture">
+          </label>
+
+          <label class="search-field" for="search-season">
+            <span class="field-label">When are you visiting</span>
+            <input id="search-season" name="season" type="text" placeholder="This month or next season">
+          </label>
+
+          <button type="submit" class="btn btn-primary search-button">Explore Cambodia</button>
+        </div>
+      </form>
+
+      <div class="hero-highlights">
+        <span>Ancient heritage</span>
+        <span>Khmer cuisine</span>
+        <span>Island escapes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Start Here</p>
+      <h2>Quick ways to explore the country</h2>
+      <p>Browse the most important parts of the guide and jump straight into the experience you want.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <p class="card-kicker">Destinations</p>
+        <h3>Visit Cambodia's iconic places</h3>
+        <p>From temple cities to coastlines and quiet countryside, discover where to begin your trip.</p>
+        <a href="destinations.html" class="btn btn-secondary">View destinations</a>
+      </article>
+
+      <article class="feature-card">
+        <p class="card-kicker">Food</p>
+        <h3>Taste authentic Khmer flavors</h3>
+        <p>Learn about well-loved dishes, local specialties, and the food culture that shapes every visit.</p>
+        <a href="food.html" class="btn btn-secondary">Explore food</a>
+      </article>
+
+      <article class="feature-card">
+        <p class="card-kicker">Experiences</p>
+        <h3>Find memorable things to do</h3>
+        <p>Choose from cultural visits, relaxing getaways, and activities that match different travel styles.</p>
+        <a href="things-to-do.html" class="btn btn-secondary">See activities</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section split-section">
+    <div class="section-heading narrow">
+      <p class="eyebrow">Why Cambodia</p>
+      <h2>A journey shaped by culture, nature, and hospitality</h2>
+      <p>The homepage should quickly tell visitors why Cambodia is special and why Kamsan is useful for planning it well.</p>
+    </div>
+
+    <div class="mini-grid">
+      <article class="mini-card">
+        <h3>Ancient Heritage</h3>
+        <p>Explore the history of Angkor Wat, sacred architecture, and stories that still shape the country today.</p>
+      </article>
+      <article class="mini-card">
+        <h3>Scenic Escapes</h3>
+        <p>Balance cultural travel with islands, riverside towns, and nature-rich destinations across Cambodia.</p>
+      </article>
+      <article class="mini-card">
+        <h3>Welcoming Culture</h3>
+        <p>Experience local traditions, everyday hospitality, and food that helps visitors connect more deeply.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section travel-strip">
+    <div class="travel-copy">
+      <p class="eyebrow">Travel Guide</p>
+      <h2>Plan with confidence before you arrive</h2>
+      <p>Read practical advice about transportation, best seasons to visit, and travel tips that make the trip smoother.</p>
+    </div>
+    <a href="travel-guide.html" class="btn btn-primary travel-link">Open travel guide</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <p class="footer-eyebrow">Kamsan</p>
+        <h2 class="footer-title">Travel Cambodia with a calmer, clearer guide.</h2>
+        <p class="footer-summary">Discover destinations, Khmer food, local experiences, and practical travel advice in one warm, easy-to-use place.</p>
+        <div class="footer-badges" aria-label="Kamsan highlights">
+          <span>Destinations</span>
+          <span>Khmer Food</span>
+          <span>Travel Tips</span>
+        </div>
+      </div>
+      <div class="footer-nav-block">
+        <p class="footer-label">Explore</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="food.html">Food</a>
+          <a href="things-to-do.html">Things to Do</a>
+          <a href="travel-guide.html">Travel Guide</a>
+          <a href="contact.html">About &amp; Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2026 Kamsan. Created for the Web Development I final project at the American University of Phnom Penh.</p>
+      <a href="contact.html" class="btn btn-secondary footer-contact">Get in touch</a>
+    </div>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -7,15 +7,28 @@
 <body>
 
 <header>
-  <h1>Things To Do</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="destinations.html">Destinations</a>
-    <a href="food.html">Food</a>
-    <a href="things-to-do.html">Things To Do</a>
-    <a href="travel-guide.html">Travel Guide</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-shell">
+    <a href="index.html" class="brand-mark" aria-label="Kamsan home"></a>
+    <div class="nav-pill">
+      <div class="brand-copy">
+        <a href="index.html" class="brand-title">Kamsan</a>
+        <span class="brand-tagline">Cambodia Travel Guide</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="food.html">Food</a>
+        <a href="things-to-do.html" class="active">Things to Do</a>
+        <a href="travel-guide.html">Travel Guide</a>
+        <a href="contact.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </div>
 </header>
 
 <section>
@@ -24,9 +37,39 @@
   <div class="card">Explore Culture</div>
 </section>
 
-<footer>
-  <p>© 2026 Kamsan</p>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <p class="footer-eyebrow">Kamsan</p>
+        <h2 class="footer-title">Travel Cambodia with a calmer, clearer guide.</h2>
+        <p class="footer-summary">Discover destinations, Khmer food, local experiences, and practical travel advice in one warm, easy-to-use place.</p>
+        <div class="footer-badges" aria-label="Kamsan highlights">
+          <span>Destinations</span>
+          <span>Khmer Food</span>
+          <span>Travel Tips</span>
+        </div>
+      </div>
+      <div class="footer-nav-block">
+        <p class="footer-label">Explore</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="food.html">Food</a>
+          <a href="things-to-do.html">Things to Do</a>
+          <a href="travel-guide.html">Travel Guide</a>
+          <a href="contact.html">About &amp; Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2026 Kamsan. Created for the Web Development I final project at the American University of Phnom Penh.</p>
+      <a href="contact.html" class="btn btn-secondary footer-contact">Get in touch</a>
+    </div>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
