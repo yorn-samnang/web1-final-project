@@ -3,6 +3,7 @@
 <head>
   <title>Kamsan - Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -32,38 +33,16 @@
 </header>
 
 <main>
-  <section class="hero-section">
+  <section class="hero-section home-hero">
     <div class="hero-copy">
       <p class="eyebrow">Kamsan Cambodia</p>
-      <h1>Discover the spirit of Cambodia through places, flavors, and culture.</h1>
-      <p class="hero-text">Plan your journey with curated destinations, Khmer food highlights, local experiences, and practical travel advice designed for first-time visitors.</p>
+      <h1>Cambodia in one calm, visual guide.</h1>
+      <p class="hero-text">Beautiful places, Khmer food, and useful tips without the overload.</p>
 
-      <form class="search-panel" action="destinations.html" method="get">
-        <div class="search-intro">
-          <p class="search-kicker">Trip Planner</p>
-          <h2>Build your Cambodia itinerary in one place</h2>
-          <p>Pick a destination, choose your travel style, and start with the guide that fits your trip best.</p>
-        </div>
-
-        <div class="search-grid">
-          <label class="search-field" for="search-destination">
-            <span class="field-label">Where to explore</span>
-            <input id="search-destination" name="destination" type="text" placeholder="Siem Reap, Koh Rong, Kampot">
-          </label>
-
-          <label class="search-field" for="search-interest">
-            <span class="field-label">What interests you</span>
-            <input id="search-interest" name="interest" type="text" placeholder="Temples, food, beaches, culture">
-          </label>
-
-          <label class="search-field" for="search-season">
-            <span class="field-label">When are you visiting</span>
-            <input id="search-season" name="season" type="text" placeholder="This month or next season">
-          </label>
-
-          <button type="submit" class="btn btn-primary search-button">Explore Cambodia</button>
-        </div>
-      </form>
+      <div class="hero-actions" aria-label="Quick actions">
+        <a href="destinations.html" class="btn btn-primary">Explore destinations</a>
+        <a href="things-to-do.html" class="btn btn-secondary">See things to do</a>
+      </div>
 
       <div class="hero-highlights">
         <span>Ancient heritage</span>
@@ -73,65 +52,89 @@
     </div>
   </section>
 
+  <section class="content-section video-section">
+    <div class="video-copy">
+      <p class="eyebrow">Featured Video</p>
+      <h2>Watch Cambodia in motion</h2>
+      <p>A short cinematic look at landscapes, temples, and local life.</p>
+      <a href="https://youtu.be/o7nylay4H58?si=6HdXD3-fqd-L_BMz" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+    </div>
+    <div class="video-frame-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/o7nylay4H58?si=6HdXD3-fqd-L_BMz"
+        title="Cambodia travel feature video"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
   <section class="content-section">
     <div class="section-heading">
-      <p class="eyebrow">Start Here</p>
-      <h2>Quick ways to explore the country</h2>
-      <p>Browse the most important parts of the guide and jump straight into the experience you want.</p>
+      <p class="eyebrow">Feature Collection</p>
+      <h2>Pick a mood, then start your trip</h2>
+      <p>Each section includes a visual preview and a quick path to dive deeper.</p>
     </div>
 
-    <div class="feature-grid">
-      <article class="feature-card">
-        <p class="card-kicker">Destinations</p>
-        <h3>Visit Cambodia's iconic places</h3>
-        <p>From temple cities to coastlines and quiet countryside, discover where to begin your trip.</p>
-        <a href="destinations.html" class="btn btn-secondary">View destinations</a>
+    <div class="showcase-grid">
+      <article class="showcase-card">
+        <img src="images/travel-guide/angkorwat.jpg" alt="Angkor Wat at sunrise">
+        <div class="showcase-card-body">
+          <p class="card-kicker">Destinations</p>
+          <h3>Iconic places</h3>
+          <p>Temples, coastlines, and quiet towns.</p>
+          <a href="destinations.html" class="btn btn-secondary">View destinations</a>
+        </div>
       </article>
 
-      <article class="feature-card">
-        <p class="card-kicker">Food</p>
-        <h3>Taste authentic Khmer flavors</h3>
-        <p>Learn about well-loved dishes, local specialties, and the food culture that shapes every visit.</p>
-        <a href="food.html" class="btn btn-secondary">Explore food</a>
+      <article class="showcase-card">
+        <img src="images/food/fish-amok.jpg" alt="Traditional Cambodian fish amok dish">
+        <div class="showcase-card-body">
+          <p class="card-kicker">Food</p>
+          <h3>Khmer flavors</h3>
+          <p>Street favorites and classic local dishes.</p>
+          <a href="food.html" class="btn btn-secondary">Explore food</a>
+        </div>
       </article>
 
-      <article class="feature-card">
-        <p class="card-kicker">Experiences</p>
-        <h3>Find memorable things to do</h3>
-        <p>Choose from cultural visits, relaxing getaways, and activities that match different travel styles.</p>
-        <a href="things-to-do.html" class="btn btn-secondary">See activities</a>
+      <article class="showcase-card">
+        <img src="images/things-to-do/koh-rong.png" alt="Turquoise water and beach on Koh Rong">
+        <div class="showcase-card-body">
+          <p class="card-kicker">Things to Do</p>
+          <h3>Memorable moments</h3>
+          <p>Island escapes, culture, and adventures.</p>
+          <a href="things-to-do.html" class="btn btn-secondary">See activities</a>
+        </div>
+      </article>
+
+      <article class="showcase-card">
+        <img src="images/travel-guide/tuk-tuk.jpg" alt="Tuk-tuk in Cambodia for local transport">
+        <div class="showcase-card-body">
+          <p class="card-kicker">Travel Guide</p>
+          <h3>Practical tips</h3>
+          <p>Transport, seasons, and first-day basics.</p>
+          <a href="travel-guide.html" class="btn btn-secondary">Open guide</a>
+        </div>
+      </article>
+
+      <article class="showcase-card">
+        <img src="images/travel-guide/local-greeting.jpg" alt="Local Khmer greeting and cultural interaction">
+        <div class="showcase-card-body">
+          <p class="card-kicker">About &amp; Contact</p>
+          <h3>Meet Kamsan</h3>
+          <p>Get in touch and learn about this project.</p>
+          <a href="contact.html" class="btn btn-secondary">Contact us</a>
+        </div>
       </article>
     </div>
   </section>
 
-  <section class="content-section split-section">
-    <div class="section-heading narrow">
-      <p class="eyebrow">Why Cambodia</p>
-      <h2>A journey shaped by culture, nature, and hospitality</h2>
-      <p>The homepage should quickly tell visitors why Cambodia is special and why Kamsan is useful for planning it well.</p>
-    </div>
-
-    <div class="mini-grid">
-      <article class="mini-card">
-        <h3>Ancient Heritage</h3>
-        <p>Explore the history of Angkor Wat, sacred architecture, and stories that still shape the country today.</p>
-      </article>
-      <article class="mini-card">
-        <h3>Scenic Escapes</h3>
-        <p>Balance cultural travel with islands, riverside towns, and nature-rich destinations across Cambodia.</p>
-      </article>
-      <article class="mini-card">
-        <h3>Welcoming Culture</h3>
-        <p>Experience local traditions, everyday hospitality, and food that helps visitors connect more deeply.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="content-section travel-strip">
+  <section class="content-section travel-strip home-cta-strip">
     <div class="travel-copy">
-      <p class="eyebrow">Travel Guide</p>
-      <h2>Plan with confidence before you arrive</h2>
-      <p>Read practical advice about transportation, best seasons to visit, and travel tips that make the trip smoother.</p>
+      <p class="eyebrow">Start Planning</p>
+      <h2>Need quick practical advice?</h2>
+      <p>Open the travel guide for transport, weather, and smooth first-day tips.</p>
     </div>
     <a href="travel-guide.html" class="btn btn-primary travel-link">Open travel guide</a>
   </section>

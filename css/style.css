@@ -518,6 +518,108 @@ form button:not(.nav-toggle):focus-visible {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
+.home-hero {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.82) 36%, rgba(255, 255, 255, 0.22) 64%, rgba(255, 255, 255, 0.08) 100%),
+    linear-gradient(180deg, rgba(245, 251, 250, 0.18), rgba(245, 251, 250, 0.34)),
+    url("../images/travel-guide/travel-guide-hero.jpg") center/cover no-repeat;
+}
+
+.hero-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.video-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.video-copy {
+  padding: 14px 6px;
+}
+
+.video-copy h2 {
+  margin: 0;
+  color: #173739;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.video-copy p {
+  color: rgba(23, 55, 57, 0.75);
+  line-height: 1.7;
+}
+
+.video-frame-wrap {
+  aspect-ratio: 16 / 9;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(23, 55, 57, 0.12);
+  box-shadow: var(--shadow-soft);
+  background: #091719;
+}
+
+.video-frame-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(23, 55, 57, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 251, 250, 0.86));
+  box-shadow: var(--shadow-soft);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.showcase-card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.showcase-card-body h3 {
+  margin: 0;
+  color: #173739;
+  font-size: 1.2rem;
+}
+
+.showcase-card-body p {
+  margin: 0;
+  color: rgba(23, 55, 57, 0.75);
+  line-height: 1.55;
+}
+
+.showcase-card .btn {
+  margin-top: auto;
+}
+
+.home-cta-strip {
+  margin-bottom: 8px;
+}
+
 .content-section {
   padding-top: 34px;
 }
@@ -835,6 +937,10 @@ form button:not(.nav-toggle):focus-visible {
     background-position: 68% center;
   }
 
+  .home-hero {
+    background-position: 58% center;
+  }
+
   .hero-copy {
     max-width: none;
     padding: 34px 24px 28px;
@@ -849,6 +955,11 @@ form button:not(.nav-toggle):focus-visible {
   .split-section,
   .mini-grid,
   .search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-section,
+  .showcase-grid {
     grid-template-columns: 1fr;
   }
 
@@ -905,6 +1016,12 @@ form button:not(.nav-toggle):focus-visible {
       url("../images/travel-guide/angkorwat.jpg") 62% center/cover no-repeat;
   }
 
+  .home-hero {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.82) 48%, rgba(255, 255, 255, 0.36) 100%),
+      url("../images/travel-guide/travel-guide-hero.jpg") 60% center/cover no-repeat;
+  }
+
   .hero-copy {
     padding: 28px 18px 22px;
   }
@@ -922,6 +1039,30 @@ form button:not(.nav-toggle):focus-visible {
   .travel-link,
   .feature-card a {
     width: 100%;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-actions .btn,
+  .showcase-card .btn,
+  .video-copy .btn {
+    width: 100%;
+  }
+
+  .showcase-card {
+    border-radius: 20px;
+  }
+
+  .showcase-card img {
+    height: 200px;
+  }
+
+  .video-frame-wrap {
+    border-radius: 20px;
   }
 
   .feature-card,
