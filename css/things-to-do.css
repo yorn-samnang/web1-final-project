@@ -1,0 +1,401 @@
+.hero-section {
+    height: 560px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/things-to-do/night-market.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    cursor: default;
+}
+
+.hero-section h1 {
+    color: white;
+    line-height: 80px;
+}
+
+.hero-section p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    background: linear-gradient(to bottom, #ffffff, #e6f0ff);
+    margin-top: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.88);;
+    color: #173739;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    transform: scale(1.1);
+}
+
+.top-picks-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/top-picks.png);
+    background-position: center 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.top-picks-header p {
+    font-size: 22px;
+}
+
+.culture-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+        url(../images/things-to-do/culture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.culture-header p {
+    font-size: 22px;
+}
+
+.nature-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/nature.png);
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.nature-header p {
+    font-size: 22px;
+}
+
+.temples-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/temples.png);
+    background-position: center 28%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.temples-header p {
+    font-size: 22px;
+}
+
+.islands-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/islands.png);
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.islands-header p {
+    font-size: 22px;
+}
+
+.food-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/food.png);
+    background-position: center 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.food-header p {
+    font-size: 22px;
+}
+
+.nightlife-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/nightlife.png);
+    background-position: center 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.nightlife-header p {
+    font-size: 22px;
+}
+
+.unique-header {
+    height: 200px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../images/things-to-do/unique.png);
+    background-position: center 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.unique-header p {
+    font-size: 22px;
+}
+
+.top-picks-header,
+.culture-header,
+.nature-header,
+.temples-header,
+.islands-header,
+.food-header,
+.nightlife-header,
+.unique-header {
+    cursor: default;
+}
+
+.place-card-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    height: 380px;
+}
+
+.place-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #ffffff 60%, #daedf7 98%, #b5d4f4 100%);
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: 
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.place-card.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.place-card.show:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.place-card img {
+    flex: 0 0 50%;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    padding: 0 1.5rem;
+    flex: 0 0 50%;
+}
+
+.card-content h3 {
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    margin: 0 20px;
+    height: 360px;
+  } 
+
+  .hero-section h1 {
+    line-height: 42px;
+    font-size: 34px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  .hero-button {
+    font-size: 14px;
+  }
+
+  .place-card-grid {
+    margin: 2rem 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .place-card {
+    height: 460px;
+  }
+
+  .card-content {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .card-content h3 {
+    font-size: 20px;
+  }
+
+  .card-content p {
+    font-size: 18px;
+  }
+
+  .top-picks-header,
+  .culture-header,
+  .nature-header,
+  .temples-header,
+  .islands-header,
+  .food-header,
+  .nightlife-header,
+  .unique-header {
+    height: 200px;
+    padding: 1rem 1.5rem;
+    margin: 0 1.5rem;
+  }
+
+  .top-picks-header h1,
+  .culture-header h1,
+  .nature-header h1,
+  .temples-header h1,
+  .islands-header h1,
+  .food-header h1,
+  .nightlife-header h1,
+  .unique-header h1 {
+    font-size: 22px;
+  }
+
+  .top-picks-header p,
+  .culture-header p,
+  .nature-header p,
+  .temples-header p,
+  .islands-header p,
+  .food-header p,
+  .nightlife-header p,
+  .unique-header p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    margin: 0 30px;
+    height: 360px;
+  } 
+
+  .hero-section h1 {
+    font-size: 30px;
+  }
+
+  .hero-section p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 13px;
+  }  
+
+  .place-card-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2rem;
+    margin: 2rem 2rem;
+  }
+
+  .place-card {
+    height: 340px;
+  }
+
+  .card-content {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .card-content h3 {
+    font-size: 17px;
+  }
+
+  .card-content p {
+    font-size: 15px;
+  }
+
+  .top-picks-header,
+  .culture-header,
+  .nature-header,
+  .temples-header,
+  .islands-header,
+  .food-header,
+  .nightlife-header,
+  .unique-header {
+    height: 180px;
+    padding: 0.5rem 2rem;
+    margin: 0 2rem;
+  }
+
+  .top-picks-header h1,
+  .culture-header h1,
+  .nature-header h1,
+  .temples-header h1,
+  .islands-header h1,
+  .food-header h1,
+  .nightlife-header h1,
+  .unique-header h1 {
+    font-size: 20px;
+  }
+
+  .top-picks-header p,
+  .culture-header p,
+  .nature-header p,
+  .temples-header p,
+  .islands-header p,
+  .food-header p,
+  .nightlife-header p,
+  .unique-header p {
+    font-size: 16px;
+  }
+}
