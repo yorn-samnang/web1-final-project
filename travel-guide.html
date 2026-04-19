@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-  <title>Travel Guide</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamsan - Travel Guide</title>
+  <link rel="stylesheet" href="css/travel-guide_style.css">
 </head>
 <body>
 
 <header>
   <div class="nav-shell">
     <a href="index.html" class="brand-mark" aria-label="Kamsan home"></a>
+
     <div class="nav-pill">
       <div class="brand-copy">
         <a href="index.html" class="brand-title">Kamsan</a>
         <span class="brand-tagline">Cambodia Travel Guide</span>
       </div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="destinations.html">Destinations</a>
@@ -31,26 +35,484 @@
   </div>
 </header>
 
-<section>
-  <div class="card">Transportation Info</div>
-  <div class="card">Best Time to Visit</div>
-  <div class="card">Travel Tips</div>
-</section>
+<main>
+  <section class="travel-guide-hero">
+    <div class="travel-guide-hero-overlay">
+      <div class="travel-guide-hero-content">
+        <p class="guide-kicker">Travel Guide</p>
+        <h1>Travel Cambodia with confidence</h1>
+        <p class="guide-hero-description">
+          Discover the best time to visit, local transport, Khmer food, travel tips, and cultural etiquette in one calm, beautiful guide.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#best-time" class="btn btn-primary">Start Exploring</a>
+          <a href="#travel-video" class="btn btn-secondary">Watch Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jump-links-section">
+    <div class="jump-links-shell reveal">
+      <p class="jump-links-label">Explore This Page</p>
+      <nav class="guide-anchor-nav" aria-label="Travel guide section links">
+        <a href="#best-time">Best Time</a>
+        <a href="#transport">Transportation</a>
+        <a href="#food-to-try">Food to Try</a>
+        <a href="#travel-tips">Travel Tips</a>
+        <a href="#culture-etiquette">Culture &amp; Etiquette</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="content-section" id="best-time">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Best Time to Visit</p>
+      <h2>Choose the season that fits your trip</h2>
+      <p>
+        Cambodia feels different in the dry and rainy seasons. Choose the one that matches your travel style,
+        whether you want temple visits, island time, or green countryside views.
+      </p>
+    </div>
+
+    <div class="season-image-grid">
+      <article class="season-image-card reveal">
+        <div class="season-photo-wrap">
+          <img src="images/travel-guide/dry-season.jpg" alt="Dry season travel in Cambodia">
+        </div>
+        <div class="season-card-content">
+          <h3>Dry Season</h3>
+          <p class="season-best">Best for temples, beaches, islands, and city walks</p>
+          <p>
+            Dry season is ideal for visitors who want bright days, easier transport, and comfortable sightseeing across Cambodia.
+          </p>
+          <ul class="guide-list">
+            <li>Great for Angkor Wat and temple visits</li>
+            <li>Better island and ferry conditions</li>
+            <li>Comfortable for walking in cities</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="season-image-card reveal">
+        <div class="season-photo-wrap">
+          <img src="images/travel-guide/rainy-season.jpg" alt="Rainy season travel in Cambodia">
+        </div>
+        <div class="season-card-content">
+          <h3>Rainy Season</h3>
+          <p class="season-best">Best for green scenery and a calmer atmosphere</p>
+          <p>
+            Rainy season can still be beautiful for travelers who prefer lush landscapes, softer light, and fewer crowds in some places.
+          </p>
+          <ul class="guide-list">
+            <li>Beautiful countryside views</li>
+            <li>Often quieter in some destinations</li>
+            <li>Pack an umbrella and plan flexibly</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section transport-section" id="transport">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Transportation</p>
+      <h2>Get around Cambodia with confidence</h2>
+      <p>
+        Use local transport for city rides and combine it with longer-distance options for bigger trips across the country.
+      </p>
+    </div>
+
+    <div class="transport-grid visual-transport-grid">
+      <article class="transport-card visual-transport-card reveal">
+        <div class="transport-photo-wrap">
+          <img src="images/travel-guide/tuk-tuk.jpg" alt="Tuk-tuk transportation in Cambodia">
+        </div>
+        <div class="transport-card-body">
+          <h3>Tuk-tuk</h3>
+          <p>Best for short city rides, markets, food stops, and flexible sightseeing.</p>
+          <ul class="guide-list">
+            <li>Very useful in Phnom Penh and Siem Reap</li>
+            <li>Great for short distances</li>
+            <li>Apps help with easier pricing</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="transport-card visual-transport-card reveal">
+        <div class="transport-photo-wrap">
+          <img src="images/travel-guide/bus.jpg" alt="Bus transportation in Cambodia">
+        </div>
+        <div class="transport-card-body">
+          <h3>Bus</h3>
+          <p>Budget-friendly and useful for traveling between cities and provinces.</p>
+          <ul class="guide-list">
+            <li>Good for intercity travel</li>
+            <li>Useful for lower-cost trips</li>
+            <li>Keep valuables with you</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="transport-card visual-transport-card reveal">
+        <div class="transport-photo-wrap">
+          <img src="images/travel-guide/ferry.jpg" alt="Ferry transportation for islands in Cambodia">
+        </div>
+        <div class="transport-card-body">
+          <h3>Ferry</h3>
+          <p>Important for island routes and coastal travel, especially near Sihanoukville.</p>
+          <ul class="guide-list">
+            <li>Useful for island access</li>
+            <li>Weather can affect timing</li>
+            <li>Arrive early before departure</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="transport-card visual-transport-card reveal">
+        <div class="transport-photo-wrap">
+          <img src="images/travel-guide/plane.jpg" alt="Plane travel in Cambodia">
+        </div>
+        <div class="transport-card-body">
+          <h3>Plane</h3>
+          <p>Best for saving time and reaching more destinations during shorter trips.</p>
+          <ul class="guide-list">
+            <li>Fast for longer routes</li>
+            <li>Helpful for short itineraries</li>
+            <li>Check baggage rules first</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="section-heading app-heading reveal">
+      <p class="eyebrow">Popular Ride Apps</p>
+      <h2>Useful apps for tuk-tuk and city transport</h2>
+      <p>
+        These apps are practical for travelers and make short city rides much easier.
+      </p>
+    </div>
+
+    <div class="app-grid refined-app-grid logo-app-grid">
+      <article class="app-card refined-app-card logo-app-card reveal">
+        <div class="app-logo-wrap">
+          <img src="images/travel-guide/passapp-logo.png" alt="PassApp logo" class="app-logo-image" width="72" height="72">
+        </div>
+        <div class="app-card-body">
+          <div class="app-title-row">
+            <h3>PassApp</h3>
+          </div>
+          <p>
+            PassApp is a Cambodia-based ride-hailing service that is widely used for tuk-tuks and local transportation in major cities.
+          </p>
+          <ul class="guide-list compact-list">
+            <li>Popular for tuk-tuk rides</li>
+            <li>Useful for local city travel</li>
+            <li>Easy pricing for tourists</li>
+          </ul>
+          <div class="app-actions">
+            <a href="https://www.passapptaxis.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit PassApp</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="app-card refined-app-card logo-app-card reveal">
+        <div class="app-logo-wrap">
+          <img src="images/travel-guide/grab-logo.png" alt="Grab logo" class="app-logo-image" width="72" height="72">
+        </div>
+        <div class="app-card-body">
+          <div class="app-title-row">
+            <h3>Grab KH</h3>
+          </div>
+          <p>
+            Grab is a well-known Southeast Asian ride app that offers convenient transport options and fixed-fare booking in urban areas.
+          </p>
+          <ul class="guide-list compact-list">
+            <li>Helpful for visitors</li>
+            <li>Fixed-fare convenience</li>
+            <li>Useful in city areas</li>
+          </ul>
+          <div class="app-actions">
+            <a href="https://www.grab.com/kh/en/transport/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit Grab KH</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="app-card refined-app-card logo-app-card reveal">
+        <div class="app-logo-wrap">
+          <img src="images/travel-guide/tada-logo.jpg" alt="TADA logo" class="app-logo-image" width="72" height="72">
+        </div>
+        <div class="app-card-body">
+          <div class="app-title-row">
+            <h3>TADA</h3>
+          </div>
+          <p>
+            TADA is another ride-hailing option for travelers who want flexible transport around Cambodian cities and busy urban districts.
+          </p>
+          <ul class="guide-list compact-list">
+            <li>Good city travel option</li>
+            <li>Alternative ride platform</li>
+            <li>Simple app-based booking</li>
+          </ul>
+          <div class="app-actions">
+            <a href="https://tada.global/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit TADA</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section payment-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Currency &amp; Payment</p>
+      <h2>Carry some cash, but expect QR payment too</h2>
+      <p>
+        Cash is still useful in Cambodia, but QR payment is now very common in cafés, restaurants, shops, and city businesses.
+      </p>
+    </div>
+
+    <div class="payment-layout visual-payment-layout">
+      <article class="payment-card payment-photo-card reveal">
+        <div class="payment-photo-wrap">
+          <img src="images/travel-guide/local-currency.jpg" alt="Cambodian local currency and cash payment">
+        </div>
+        <div class="payment-card-body">
+          <p class="card-kicker">Cash</p>
+          <h3>Local Currency</h3>
+          <p>
+            Cash remains very useful for markets, smaller local shops, street food, and day-to-day purchases. Small notes are especially practical.
+          </p>
+          <div class="payment-points">
+            <span>Small notes help</span>
+            <span>Useful in local shops</span>
+            <span>Good backup option</span>
+          </div>
+          <div class="payment-actions">
+            <a href="https://adventurescambodia.com/blog/understanding-currency-in-cambodia/?srsltid=AfmBOoreUsNZPJc6UZHnt6n9BJZdTPrDBgAcRWtrpJGC5_JRabEM1spx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Learn About Cambodian Currency
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="payment-card payment-photo-card qr-card reveal">
+        <div class="payment-photo-wrap">
+          <img src="images/travel-guide/bakong-payment.jpg" alt="Bakong QR code payment in Cambodia">
+        </div>
+        <div class="payment-card-body">
+          <p class="card-kicker">QR Payment</p>
+          <h3>Bakong &amp; Digital Payment</h3>
+          <p>
+            QR payment is now very common in Cambodia. Bakong and KHQR-style payments are often used in cafés, restaurants, stores, and urban businesses.
+          </p>
+          <div class="payment-points">
+            <span>Common in cafés</span>
+            <span>Useful in cities</span>
+            <span>Very practical</span>
+          </div>
+          <div class="payment-actions">
+            <a href="https://bakong.nbc.gov.kh/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Learn About Bakong
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section culture-section" id="culture-etiquette">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Culture &amp; Etiquette</p>
+      <h2>Respect local customs and enjoy a smoother trip</h2>
+      <p>
+        Understanding local etiquette helps travelers make a good impression and feel more comfortable when visiting temples, markets, homes, and public places in Cambodia.
+      </p>
+    </div>
+
+    <div class="culture-grid">
+      <article class="culture-card culture-photo-card reveal">
+        <div class="culture-photo-wrap">
+          <img src="images/travel-guide/temple-etiquette.jpg" alt="Visitors wearing respectful clothing at a temple in Cambodia">
+        </div>
+        <div class="culture-card-content">
+          <h3>Temple Respect</h3>
+          <p>
+            When visiting temples, dress modestly by covering shoulders and knees. Speak softly, avoid climbing on sacred structures, and follow local signs or guidance.
+          </p>
+          <ul class="guide-list">
+            <li>Wear respectful clothing</li>
+            <li>Remove hats in sacred areas</li>
+            <li>Keep noise low and be mindful</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="culture-card culture-photo-card reveal">
+        <div class="culture-photo-wrap">
+          <img src="images/travel-guide/local-greeting.jpg" alt="Friendly Cambodian local greeting travelers">
+        </div>
+        <div class="culture-card-content">
+          <h3>Everyday Courtesy</h3>
+          <p>
+            A polite attitude goes a long way. Smile, greet people kindly, and avoid touching someone’s head or pointing your feet toward people or sacred objects.
+          </p>
+          <ul class="guide-list">
+            <li>Be calm and friendly</li>
+            <li>Respect personal and sacred space</li>
+            <li>Use polite behavior in public places</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="culture-tips-row">
+      <article class="mini-tip-card reveal">
+        <h3>Dress Modestly</h3>
+        <p>Especially important at temples, pagodas, and religious sites.</p>
+      </article>
+
+      <article class="mini-tip-card reveal">
+        <h3>Ask Before Taking Photos</h3>
+        <p>It is respectful to ask before photographing monks, locals, or private spaces.</p>
+      </article>
+
+      <article class="mini-tip-card reveal">
+        <h3>Be Gentle in Communication</h3>
+        <p>Speaking politely and staying calm is appreciated in everyday interactions.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="food-to-try">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Food to Try</p>
+      <h2>Taste Khmer dishes worth remembering</h2>
+      <p>
+        Food is one of the most memorable parts of visiting Cambodia.
+      </p>
+    </div>
+
+    <div class="food-photo-grid">
+      <article class="food-photo-card reveal">
+        <img src="images/travel-guide/fish-amok.jpg" alt="Fish Amok Cambodian food">
+        <div class="food-card-copy">
+          <h3>Fish Amok</h3>
+          <p>A classic Khmer dish with curry flavor, coconut notes, and a soft texture.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal">
+        <img src="images/travel-guide/lok-lak.jpg" alt="Beef Lok Lak Cambodian food">
+        <div class="food-card-copy">
+          <h3>Beef Lok Lak</h3>
+          <p>A savory dish often served with rice, vegetables, and pepper-lime sauce.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal">
+        <img src="images/travel-guide/kuy-teav.jpg" alt="Kuy Teav Cambodian noodle soup">
+        <div class="food-card-copy">
+          <h3>Kuy Teav</h3>
+          <p>A comforting noodle soup that works well for breakfast or a lighter meal.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal">
+        <img src="images/travel-guide/nom-banh-chok.jpg" alt="Nom Banh Chok Cambodian noodles">
+        <div class="food-card-copy">
+          <h3>Nom Banh Chok</h3>
+          <p>Fresh rice noodles with herbs and light curry sauce that feels refreshing and local.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section video-section" id="travel-video">
+    <div class="video-section-shell reveal">
+      <div class="section-heading video-heading">
+        <p class="eyebrow eyebrow-light">Travel Video</p>
+        <h2>Hidden Gems, Safe Journeys &amp; Cambodia’s Beautiful Moments</h2>
+      </div>
+
+      <div class="video-frame-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/l-27gvMOtB0?si=WZ23WUOlvNgNLuB_"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="video-feature-copy">
+        <p class="video-label">Featured Travel Story</p>
+        <h3>Why Cambodia Might Be Southeast Asia’s Best-Kept Secret</h3>
+        <p>
+          Located in the heart of Southeast Asia, Cambodia is bordered by Thailand, Laos, and Vietnam. Renowned for its rich history, unique culture, and warm hospitality, this hidden gem destination offers a diverse range of attractions. From ancient temples in the north, to pristine beaches in the south, bustling cities, and authentic countryside villages, there’s something for everyone. In this video, we highlight 10 amazing places to visit in Cambodia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="travel-tips">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Travel Tips</p>
+      <h2>Useful things to know before you go</h2>
+      <p>
+        These practical tips help visitors stay safe, comfortable, and prepared while traveling in Cambodia.
+      </p>
+    </div>
+
+    <div class="tips-accordion">
+      <details class="tip-item reveal">
+        <summary>Safety</summary>
+        <div class="tip-content">
+          <p>
+            Use trusted ride apps when possible, keep your belongings secure, and stay aware in crowded tourist areas.
+            Save your hotel location on your phone before going out.
+          </p>
+        </div>
+      </details>
+
+      <details class="tip-item reveal">
+        <summary>Currency &amp; QR Payment</summary>
+        <div class="tip-content">
+          <p>
+            Many places now accept QR payment, especially in cities. It is still smart to carry small cash too.
+          </p>
+        </div>
+      </details>
+
+      <details class="tip-item reveal">
+        <summary>Weather</summary>
+        <div class="tip-content">
+          <p>
+            Cambodia can be hot and humid, so light clothing, sunscreen, drinking water, and flexible daily planning are very helpful.
+          </p>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="footer-shell">
     <div class="footer-main">
-      <div class="footer-brand-block">
+      <div class="footer-brand-block reveal">
         <p class="footer-eyebrow">Kamsan</p>
         <h2 class="footer-title">Travel Cambodia with a calmer, clearer guide.</h2>
-        <p class="footer-summary">Discover destinations, Khmer food, local experiences, and practical travel advice in one warm, easy-to-use place.</p>
+        <p class="footer-summary">
+          Discover destinations, Khmer food, local experiences, and practical travel advice in one warm, easy-to-use place.
+        </p>
         <div class="footer-badges" aria-label="Kamsan highlights">
           <span>Destinations</span>
           <span>Khmer Food</span>
           <span>Travel Tips</span>
         </div>
       </div>
-      <div class="footer-nav-block">
+
+      <div class="footer-nav-block reveal">
         <p class="footer-label">Explore</p>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="index.html">Home</a>

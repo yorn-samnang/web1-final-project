@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamsan - About &amp; Contact</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
@@ -14,7 +17,7 @@
         <a href="index.html" class="brand-title">Kamsan</a>
         <span class="brand-tagline">Cambodia Travel Guide</span>
       </div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -31,15 +34,107 @@
   </div>
 </header>
 
-<section>
-  <h2>Contact Form</h2>
-  <form>
-    <input type="text" placeholder="Your Name"><br><br>
-    <input type="email" placeholder="Your Email"><br><br>
-    <textarea placeholder="Your Message"></textarea><br><br>
-    <button type="submit" class="btn btn-primary">Send</button>
-  </form>
-</section>
+<main class="contact-page">
+  <section class="contact-hero reveal">
+    <div class="contact-hero-content">
+      <p class="contact-kicker">About Kamsan</p>
+      <h1>Built to make Cambodia travel feel easy and welcoming</h1>
+      <p>
+        Kamsan is a student-built guide for travelers who want practical tips and local flavor in one place.
+        We combine destination ideas, food highlights, and simple transport advice so planning your trip feels calm.
+      </p>
+      <div class="hero-badges" aria-label="Kamsan highlights">
+        <span>Simple Guides</span>
+        <span>Local Food Picks</span>
+        <span>Useful Travel Tips</span>
+      </div>
+    </div>
+    <aside class="contact-quick-info" aria-label="Quick contact details">
+      <p class="quick-info-label">Quick Contact</p>
+      <h2>Let us plan better with you</h2>
+      <p class="quick-info-intro">Reach out for itinerary tips, food suggestions, or feedback to improve this guide.</p>
+
+      <div class="quick-info-list" role="list">
+        <div class="quick-info-item" role="listitem">
+          <p class="quick-info-title">Email</p>
+          <a href="mailto:hello@kamsan-guide.com">hello@kamsan-guide.com</a>
+        </div>
+        <div class="quick-info-item" role="listitem">
+          <p class="quick-info-title">Based in</p>
+          <p>Phnom Penh, Cambodia</p>
+        </div>
+        <div class="quick-info-item" role="listitem">
+          <p class="quick-info-title">Typical reply</p>
+          <p>Within 24-48 hours</p>
+        </div>
+      </div>
+
+      <div class="quick-info-actions">
+        <a class="btn btn-primary" href="#contact-form">Send a Message</a>
+        <a class="btn btn-secondary" href="travel-guide.html">Browse Travel Guide</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="contact-grid-section">
+    <article class="info-card reveal">
+      <h3>For Travelers</h3>
+      <p>
+        Ask us about first-time Cambodia itineraries, local transport options, and food recommendations by city.
+      </p>
+    </article>
+    <article class="info-card reveal">
+      <h3>For Suggestions</h3>
+      <p>
+        Found outdated info? Share corrections and we will improve the guide so future visitors get better advice.
+      </p>
+    </article>
+    <article class="info-card reveal">
+      <h3>For Collaborations</h3>
+      <p>
+        If you are a local business or tourism partner, contact us for content partnerships and feature requests.
+      </p>
+    </article>
+  </section>
+
+  <section class="contact-form-section reveal" id="contact-form">
+    <div class="contact-form-header">
+      <p class="contact-kicker">Contact Form</p>
+      <h2>Tell us how we can help</h2>
+      <p>We read every message and use your feedback to make Kamsan more useful for travelers.</p>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="field-row">
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="full-name" type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="field-row">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="field-row">
+        <label for="topic">Message Topic</label>
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>Select a topic</option>
+          <option value="travel-question">Travel question</option>
+          <option value="food-recommendation">Food recommendation</option>
+          <option value="site-feedback">Site feedback</option>
+          <option value="collaboration">Collaboration</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Tell us your question or idea" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="footer-shell">

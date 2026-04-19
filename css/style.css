@@ -79,7 +79,7 @@ header {
   content: "";
   position: absolute;
   inset: 8px 10px;
-  background: url("../images/kamsan-logo.png") center 48%/cover no-repeat;
+  background: url("../images/food/kamsan-logo.png") center 48%/cover no-repeat;
   mix-blend-mode: multiply;
   filter: saturate(1.06) contrast(1.08);
 }
@@ -359,7 +359,7 @@ form button:not(.nav-toggle):focus-visible {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.82) 36%, rgba(255, 255, 255, 0.26) 64%, rgba(255, 255, 255, 0.1) 100%),
     linear-gradient(180deg, rgba(245, 251, 250, 0.2), rgba(245, 251, 250, 0.42)),
-    url("../images/angkorwat.jpg") center/cover no-repeat;
+    url("../images/travel-guide/angkorwat.jpg") center/cover no-repeat;
   border-radius: 42px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(70, 109, 112, 0.12);
@@ -902,7 +902,7 @@ form button:not(.nav-toggle):focus-visible {
     border-radius: 28px;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.8) 48%, rgba(255, 255, 255, 0.38) 100%),
-      url("../images/angkorwat.jpg") 62% center/cover no-repeat;
+      url("../images/travel-guide/angkorwat.jpg") 62% center/cover no-repeat;
   }
 
   .hero-copy {

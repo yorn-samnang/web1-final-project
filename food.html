@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Food</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Food – Kamsan Cambodia Travel Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/food.css">
 </head>
 <body>
 
+<!-- ════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════ -->
 <header>
   <div class="nav-shell">
     <a href="index.html" class="brand-mark" aria-label="Kamsan home"></a>
@@ -31,12 +37,462 @@
   </div>
 </header>
 
-<section>
-  <div class="card">Amok</div>
-  <div class="card">Lok Lak</div>
-  <div class="card">Nom Banh Chok</div>
-</section>
+<main>
 
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <div class="food-hero">
+    <div class="food-hero-inner">
+      <div class="food-hero-copy reveal">
+        <p class="eyebrow">Khmer Cuisine</p>
+        <h1>Eat Your Way Through Cambodia</h1>
+        <p>From street-side noodle bowls at dawn to fragrant curries served in banana leaves — Cambodian food is honest, aromatic, and quietly unforgettable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FILTER TABS ───────────────────────────────────────────── -->
+  <div class="filter-bar">
+    <button class="filter-pill active" data-filter="all">All Dishes</button>
+    <button class="filter-pill" data-filter="main">Main Dishes</button>
+    <button class="filter-pill" data-filter="soup">Soups &amp; Noodles</button>
+    <button class="filter-pill" data-filter="snack">Street Snacks</button>
+    <button class="filter-pill" data-filter="drink">Drinks &amp; Sweets</button>
+  </div>
+
+  <!-- ── FEATURED DISHES ──────────────────────────────────────── -->
+  <section class="page-section" id="food-to-try">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Food to Try</p>
+      <h2>Taste Khmer dishes worth remembering</h2>
+      <p>Food is one of the most memorable parts of visiting Cambodia. These are the dishes that keep travellers talking long after they've left.</p>
+    </div>
+
+    <div class="food-photo-grid">
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/fish-amok.jpg" alt="Fish Amok Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Fish Amok</h3>
+          <p>A classic Khmer dish with curry flavour, coconut notes, and a soft, mousse-like texture steamed in banana leaves.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/lok-lak.jpg" alt="Beef Lok Lak Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Beef Lok Lak</h3>
+          <p>Tender wok-tossed beef served over rice with fresh salad and the iconic Cambodian pepper-lime dipping sauce.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="soup">
+        <img src="images/food/kuy-teav.jpg" alt="Kuy Teav Cambodian noodle soup" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Soup</span>
+          <h3>Kuy Teav</h3>
+          <p>A comforting pork or beef broth with rice noodles, herbs, and crispy shallots — Phnom Penh's favourite breakfast.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="soup">
+        <img src="images/food/nom-banh-chok.jpg" alt="Nom Banh Chok Cambodian noodles" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Noodles</span>
+          <h3>Nom Banh Chok</h3>
+          <p>Fresh hand-ground rice noodles topped with green curry, banana flower, and crunchy seasonal herbs.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/banh-chao.jpg" alt="Banh Chao Cambodian sizzling pancake" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Banh Chao</h3>
+          <p>A crispy turmeric rice pancake filled with pork, shrimp, and sprouts — Cambodia's answer to a sizzling crêpe.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/samlor-machu.jpg" alt="Samlor Machu Khmer sour soup" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Samlor Machu</h3>
+          <p>A tangy, tamarind-soured soup with fish or pork, pineapple, and tomatoes — refreshing and deeply Khmer.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/bai-sach-chrouk.jpg" alt="Bai Sach Chrouk pork rice" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Bai Sach Chrouk</h3>
+          <p>Thin slices of grilled pork marinated in coconut milk served over broken rice — the simplest, best street breakfast.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/sugarcane-juice.jpg" alt="Sugarcane juice Cambodia" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Drink</span>
+          <h3>Sugarcane Juice</h3>
+          <p>Ice-cold, pressed fresh at roadside carts — the most refreshing way to cool down in the Cambodian heat.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── DRINKS & SWEETS ───────────────────────────────────────── -->
+  <section class="page-section section-no-top">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Drinks &amp; Sweets</p>
+      <h2>Cool down, sweeten up</h2>
+      <p>Cambodia's tropical climate calls for cold drinks and sticky-sweet desserts made from palm sugar and coconut.</p>
+    </div>
+    <div class="mini-cards-grid">
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/palm-sugar-dessert.jpg" alt="Cambodian palm sugar dessert" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Num Plae Ai</h3>
+          <p>Chewy rice balls filled with palm sugar and rolled in freshly grated coconut — sweet, sticky, and worth every bite.</p>
+        </div>
+      </article>
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/cambodian-dessert.jpg" alt="Cambodian dessert" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Cambodian Dessert (Num Khmer)</h3>
+          <p>A traditional Khmer dessert characterized by a sweet, rich, and creamy profile, heavily featuring coconut milk, sticky rice, palm sugar, and tropical fruits like durian and banana.</p>
+        </div>
+      </article>
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/dessert.jpg" alt="Cambodian dessert" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Cambodian Dessert</h3>
+          <p>Cambodian delicious desserts that are a must-try when visiting the country.</p>
+        </div>
+      </article>
+
+
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/sankhya-lapov.jpg" alt="Sankhya Lapov" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Sankhya Lapov</h3>
+          <p>Sankhya Lapov (Pumpkin Custard): A popular, creamy custard steamed inside a whole pumpkin, often served at special occasions.</p>
+        </div>
+      </article>
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/cambodian-dessert.jpg" alt="Cambodian dessert" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Cambodian Dessert (Num Khmer)</h3>
+          <p>A traditional Khmer dessert characterized by a sweet, rich, and creamy profile, heavily featuring coconut milk, sticky rice, palm sugar, and tropical fruits like durian and banana.</p>
+        </div>
+      </article>
+
+      <article class="mini-food-card reveal">
+        <img class="mini-food-card-img" src="images/food/dessert.jpg" alt="Cambodian dessert" loading="lazy">
+        <div class="mini-food-card-body">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Cambodian Dessert</h3>
+          <p>Cambodian delicious desserts that are a must-try when visiting the country.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── LOCAL FOOD — SIEM REAP ────────────────────────────────── -->
+  <section class="page-section" id="siem-reap">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Food to Try in Local Provinces</p>
+      <h2>Siem Reap</h2>
+      <p>The food of Siem Reap:</p>
+    </div>
+
+    <div class="food-photo-grid">
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/prahok.jpg" alt="Prahok Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Prahok</h3>
+          <p>Prahok is a fermented fish paste from Cambodia, used mainly as a seasoning to add strong flavour to dishes.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/fish-amok.jpg" alt="Fish Amok Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Fish Amok</h3>
+          <p>A classic Khmer dish with curry flavour, coconut notes, and a soft, mousse-like texture steamed in banana leaves.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/lab_khmer.jpg" alt="Lab Khmer" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Lab Khmer</h3>
+          <p>Lap Khmer is a lime-marinated beef salad with herbs and spices, often served with rice and chili for extra flavour.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/prahok-ktiss.jpg" alt="Prahok Ktiss Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Prahok Ktiss</h3>
+          <p>A flavourful dish made with fermented fish paste, served over rice with fresh herbs and vegetables.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/bamboo-sticky-rice.jpg" alt="Bamboo Sticky Rice" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Kralan (Bamboo Sticky Rice)</h3>
+          <p>Kralan is sticky rice mixed with beans and coconut water, cooked inside bamboo over fire for a rich, smoky flavour.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/nom-banh-chok-teuk-prahok.jpg" alt="Num Banh Chok Teuk Prahok Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Num Banh Chok Teuk Prahok</h3>
+          <p>A traditional Cambodian dish of fresh rice noodles served with fermented fish sauce (prahok) and fresh vegetables like cucumber, cabbage, and water lily stems.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/num-akor.jpg" alt="Num Akor Cambodian dessert" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Num Akor</h3>
+          <p>Nom Akor is a soft, fluffy steamed cake made from rice flour, palm sugar, and coconut milk, often topped with grated coconut and enjoyed as a popular Cambodian street snack.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/palm-juice.jpg" alt="Palm Juice Cambodian drink" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Drink</span>
+          <h3>Tuk Tnoat Ju</h3>
+          <p>Tuk Tnoat Ju is a traditional Cambodian drink made from sugar palm nectar, enjoyed fresh for a sweet taste or fermented for a slightly sour flavour.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── LOCAL FOOD — BATTAMBANG ───────────────────────────────── -->
+  <section class="page-section" id="battambang">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Food to Try in Local Provinces</p>
+      <h2>Battambang</h2>
+      <p>The Food of Battambang:</p>
+    </div>
+
+    <div class="food-photo-grid">
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/grilled-salted-fish.jpg" alt="Grilled Salted Fish Cambodian food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Grilled Salted Fish</h3>
+          <p>Grilled Salted Fish is a simple dish of whole fish stuffed with herbs, coated in salt, and charcoal-grilled until crispy outside and tender inside.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/nom-krok.jpg" alt="Num Krok Cambodian street food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Num Krok</h3>
+          <p>Fried coconut and rice flour cakes cooked in a cast-iron pan with moulds over a charcoal fire, available in many delicious variations.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/son-vac.jpg" alt="Son Vac Cambodian street food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Son Vac</h3>
+          <p>Fish paste grilled in banana leaves, eaten with herbs, noodles, and tangy sauce.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/pon-tia-kon.jpg" alt="Pon Tia Kon Cambodian street food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Pon Tia Kon</h3>
+          <p>Boiled balut — first drink the warm savory broth from the shell, then season with salt, pepper, and fresh lime juice.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/sach-ko-ang.jpg" alt="Sach Ko Ang Cambodian street food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Sach Ko Ang</h3>
+          <p>Grilled beef skewers, juicy from added fat and flavoured with lemongrass kroeung, giving a sweet and aromatic taste loved by locals and tourists.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="snack">
+        <img src="images/food/lort-cha.jpg" alt="Lort Cha Cambodian street food" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Street Snack</span>
+          <h3>Lort Cha</h3>
+          <p>Stir-fried rice noodles cooked with soy sauce, fish sauce, vegetables, and pork, often topped with a fried egg and chili.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/banh-janeuk.jpg" alt="Banh Ja'Neuk Cambodian dessert" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Dessert</span>
+          <h3>Banh Ja'Neuk</h3>
+          <p>Rice-flour balls stuffed with mung bean paste, drowned in coconut milk and tapioca, doused with ginger syrup, and sprinkled with sesame seeds.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── COASTAL FOODS — BEACH ISLANDS ────────────────────────── -->
+  <section class="page-section" id="beach-islands">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Foods &amp; Drinks to Try at Cambodia's Beach Islands</p>
+      <h2>Koh Rong, Koh Rong Samloem, Kompong Som, Kampot</h2>
+      <p>The Food of Cambodia's Beach Islands:</p>
+    </div>
+
+    <div class="food-photo-grid">
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/ang-dtray-meuk.jpg" alt="Grilled Squid Cambodian seafood" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Grilled Squid (Ang Dtray-meuk)</h3>
+          <p>Fresh squid grilled over charcoal and served with lime and Kampot pepper sauce — smoky, tender, and slightly sweet.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/bbq-whole-fish.jpg" alt="BBQ Whole Fish Cambodian seafood" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>BBQ Whole Fish</h3>
+          <p>Locally caught fish (snapper or barracuda) grilled whole with herbs, garlic, and salt — juicy and full of flavour.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/garlic-butter-prawns.jpg" alt="Garlic Butter Prawns Cambodian seafood" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Garlic Butter Prawns</h3>
+          <p>Large prawns sautéed in garlic and butter — simple but incredibly flavourful.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/crab-kampot-pepper.jpg" alt="Crab with Kampot Pepper" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Crab with Kampot Pepper</h3>
+          <p>A signature Cambodian dish using famous pepper from Kampot — spicy, aromatic, and rich.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="main">
+        <img src="images/food/fried_rice.jpg" alt="Seafood Fried Rice" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Main Dish</span>
+          <h3>Seafood Fried Rice</h3>
+          <p>A classic quick meal with egg, fresh vegetables, and a generous mix of local seafood.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/fresh-coconut-water.jpg" alt="Fresh Coconut Water" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Drink</span>
+          <h3>Fresh Coconut Water</h3>
+          <p>Refreshingly sweet and hydrating, perfect for beating the tropical heat.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/fruit-juice.jpg" alt="Fruit Juice" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Drink</span>
+          <h3>Fruit Juice</h3>
+          <p>Freshly blended tropical fruits — mango, watermelon, pineapple — served ice-cold at beachside shacks.</p>
+        </div>
+      </article>
+
+      <article class="food-photo-card reveal" data-category="drink">
+        <img src="images/food/beach-cocktails.jpg" alt="Beach Cocktails" loading="lazy">
+        <div class="food-card-copy">
+          <span class="food-card-tag">Drink</span>
+          <h3>Beach Cocktails</h3>
+          <p>Mojitos, piña coladas, or local rum mixes — best enjoyed during sunset by the sea.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── STREET FOOD ───────────────────────────────────────────── -->
+  <section class="page-section section-no-top">
+    <div class="street-strip">
+      <div class="street-visual reveal">
+        <img src="images/food/street-food.jpg" alt="Cambodian street food market" loading="lazy">
+        <div class="street-overlay"></div>
+        <span class="street-overlay-label">Street Food Culture</span>
+      </div>
+      <div class="street-copy reveal">
+        <p class="eyebrow">Eat Like a Local</p>
+        <h2>The street is where the best food lives</h2>
+        <p>Cambodia's most authentic flavours aren't in fancy restaurants. They're in the woks of market vendors who've been cooking the same dish for 30 years. Here's what to look for:</p>
+        <ul class="street-list">
+          <li>
+            <div class="street-list-text">
+              <strong>Early Morning Markets</strong>
+              <span>Breakfast crowds gather from 5–8 am. Kuy Teav, Bai Sach Chrouk, and fresh fruit are best eaten here.</span>
+            </div>
+          </li>
+          <li>
+            <div class="street-list-text">
+              <strong>Night Market Grills</strong>
+              <span>As the sun sets, BBQ skewers, grilled corn, and sticky rice fill the air around Phnom Penh's riverside.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
 <footer class="site-footer">
   <div class="footer-shell">
     <div class="footer-main">
