@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - Kamsan Cambodia Travel Guide</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/destinations.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-shell">
+    <a href="index.html" class="brand-mark" aria-label="Kamsan home"></a>
+
+    <div class="nav-pill">
+      <div class="brand-copy">
+        <a href="index.html" class="brand-title">Kamsan</a>
+        <span class="brand-tagline">Cambodia Travel Guide</span>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="food.html">Food</a>
+        <a href="things-to-do.html">Things to Do</a>
+        <a href="travel-guide.html">Travel Guide</a>
+        <a href="contact.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="dest-hero">
+    <div class="dest-hero-overlay">
+      <div class="dest-hero-content">
+        <p class="dest-kicker">Destinations</p>
+        <h1>Discover every corner of Cambodia</h1>
+        <p class="dest-hero-desc">
+          From the ancient temples of Siem Reap to the calm coasts of Kep, each province holds a different story. Explore Cambodia's most captivating destinations.
+        </p>
+        <div class="dest-hero-actions">
+          <a href="#destinations-grid" class="btn btn-primary">Browse Destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO + FILTER ROW -->
+  <section class="dest-intro-section" id="destinations-grid">
+    <div class="dest-intro reveal">
+      <div class="dest-intro-text">
+        <p class="eyebrow">Provinces &amp; Capital</p>
+        <h2>Where would you like to go?</h2>
+        <p>Cambodia's destinations range from busy capital cities to quiet highland retreats. Each province offers something unique — choose one to start exploring.</p>
+      </div>
+      <div class="dest-stats">
+        <div class="dest-stat">
+          <span class="dest-stat-num">12</span>
+          <span class="dest-stat-label">Destinations</span>
+        </div>
+        <div class="dest-stat">
+          <span class="dest-stat-num">5</span>
+          <span class="dest-stat-label">Regions</span>
+        </div>
+        <div class="dest-stat">
+          <span class="dest-stat-num">1</span>
+          <span class="dest-stat-label">Capital City</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGION FILTER -->
+    <div class="region-filter reveal" role="group" aria-label="Filter by region">
+      <span class="filter-label">Filter by Region</span>
+      <button class="filter-btn active" data-region="all">All</button>
+      <button class="filter-btn" data-region="central">Central</button>
+      <button class="filter-btn" data-region="northwest">Northwest</button>
+      <button class="filter-btn" data-region="south">South &amp; Coast</button>
+      <button class="filter-btn" data-region="northeast">Northeast</button>
+      <button class="filter-btn" data-region="north">North</button>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS GRID -->
+  <section class="dest-grid-section">
+    <div class="dest-grid" id="dest-grid">
+
+      <!-- PHNOM PENH -->
+      <article class="dest-card reveal" data-region="central">
+        <a href="destination-phnom-penh.html" class="dest-card-link" aria-label="Explore Phnom Penh">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/royal-palace.png" alt="Phnom Penh skyline and Royal Palace">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Capital</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Phnom Penh</h3>
+              <p class="dest-tagline">Cambodia's vibrant capital city</p>
+            </div>
+            <p class="dest-desc">A dynamic capital where historic royal landmarks, riverside promenades, and a thriving café and food scene come together in one city.</p>
+            <div class="dest-highlights">
+              <span>Royal Palace</span>
+              <span>Riverside</span>
+              <span>Markets</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- SIEM REAP -->
+      <article class="dest-card reveal" data-region="northwest">
+        <a href="destination-siem-reap.html" class="dest-card-link" aria-label="Explore Siem Reap">
+          <div class="dest-photo-wrap">
+            <img src="./images/travel-guide/angkorwat.jpg" alt="Angkor Wat temple at sunrise in Siem Reap">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Northwest</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Siem Reap</h3>
+              <p class="dest-tagline">Gateway to the ancient temples</p>
+            </div>
+            <p class="dest-desc">Home to the magnificent Angkor Wat temple complex, Siem Reap is Cambodia's most iconic destination, blending ancient history with a lively town atmosphere.</p>
+            <div class="dest-highlights">
+              <span>Angkor Wat</span>
+              <span>Pub Street</span>
+              <span>Floating Villages</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- PREAH SIHANOUK -->
+      <article class="dest-card reveal" data-region="south">
+        <a href="destination-preah-sihanouk.html" class="dest-card-link" aria-label="Explore Preah Sihanouk">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/sihanoukville.png" alt="Beach and ocean view in Preah Sihanouk province">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">South &amp; Coast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Preah Sihanouk</h3>
+              <p class="dest-tagline">Islands, beaches, and ocean escapes</p>
+            </div>
+            <p class="dest-desc">A coastal province known for its sandy beaches, accessible islands like Koh Rong and Koh Rong Samloem, and a busy port town with plenty of energy.</p>
+            <div class="dest-highlights">
+              <span>Koh Rong</span>
+              <span>Otres Beach</span>
+              <span>Island Hopping</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- BATTAMBANG -->
+      <article class="dest-card reveal" data-region="northwest">
+        <a href="destination-battambang.html" class="dest-card-link" aria-label="Explore Battambang">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/battambang.png" alt="Colonial buildings and bamboo train in Battambang">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Northwest</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Battambang</h3>
+              <p class="dest-tagline">Colonial charm and creative culture</p>
+            </div>
+            <p class="dest-desc">Cambodia's second-largest city impresses with well-preserved French colonial architecture, the famous Bamboo Train, ancient temples, and a growing arts scene.</p>
+            <div class="dest-highlights">
+              <span>Bamboo Train</span>
+              <span>Colonial Streets</span>
+              <span>Bat Cave</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- KAMPOT -->
+      <article class="dest-card reveal" data-region="south">
+        <a href="destination-kampot.html" class="dest-card-link" aria-label="Explore Kampot">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/kompot.png" alt="Riverside town of Kampot with lush green scenery">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">South &amp; Coast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Kampot</h3>
+              <p class="dest-tagline">A calm riverside town with character</p>
+            </div>
+            <p class="dest-desc">Famous for its world-renowned pepper farms, a relaxed riverside atmosphere, French colonial buildings, and the scenic Bokor mountain retreat nearby.</p>
+            <div class="dest-highlights">
+              <span>Pepper Farms</span>
+              <span>Riverside Walk</span>
+              <span>Bokor Hill</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- KEP -->
+      <article class="dest-card reveal" data-region="south">
+        <a href="destination-kep.html" class="dest-card-link" aria-label="Explore Kep">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/kep.png" alt="Crab market and coastal view in Kep province">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">South &amp; Coast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Kep</h3>
+              <p class="dest-tagline">A quiet coastal retreat by the sea</p>
+            </div>
+            <p class="dest-desc">A small and peaceful seaside province beloved for its iconic Crab Market, lush national park, and a tranquil pace that is perfect for unwinding.</p>
+            <div class="dest-highlights">
+              <span>Crab Market</span>
+              <span>National Park</span>
+              <span>Rabbit Island</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- MONDULKIRI -->
+      <article class="dest-card reveal" data-region="northeast">
+        <a href="destination-mondulkiri.html" class="dest-card-link" aria-label="Explore Mondulkiri">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/mondulkiri.png" alt="Green rolling hills and waterfalls in Mondulkiri">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Northeast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Mondulkiri</h3>
+              <p class="dest-tagline">Highland wilderness and rolling hills</p>
+            </div>
+            <p class="dest-desc">Cambodia's largest province by area, offering lush green highlands, powerful waterfalls, ethical elephant experiences, and indigenous Bunong communities.</p>
+            <div class="dest-highlights">
+              <span>Waterfalls</span>
+              <span>Elephant Valley</span>
+              <span>Hill Trekking</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- RATANAKIRI -->
+      <article class="dest-card reveal" data-region="northeast">
+        <a href="destination-ratanakiri.html" class="dest-card-link" aria-label="Explore Ratanakiri">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/ratanakkiri.png" alt="Yeak Laom volcanic crater lake in Ratanakiri">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Northeast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Ratanakiri</h3>
+              <p class="dest-tagline">Remote wilderness and volcanic lakes</p>
+            </div>
+            <p class="dest-desc">A remote northeastern province that rewards adventurous travelers with the serene Yeak Laom volcanic crater lake, dense jungle treks, and unique indigenous villages.</p>
+            <div class="dest-highlights">
+              <span>Yeak Laom Lake</span>
+              <span>Jungle Treks</span>
+              <span>Indigenous Villages</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- KRATIE -->
+      <article class="dest-card reveal" data-region="northeast">
+        <a href="destination-kratie.html" class="dest-card-link" aria-label="Explore Kratie">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/kratie.png" alt="Irrawaddy dolphins and Mekong River in Kratie">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">Northeast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Kratie</h3>
+              <p class="dest-tagline">Mekong province and rare river dolphins</p>
+            </div>
+            <p class="dest-desc">Situated along the Mekong River, Kratie is best known for rare Irrawaddy dolphin sightings at Kampi, along with sunset boat rides and peaceful river island cycling.</p>
+            <div class="dest-highlights">
+              <span>Irrawaddy Dolphins</span>
+              <span>Mekong Sunsets</span>
+              <span>Koh Trong Island</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- TAKEO -->
+      <article class="dest-card reveal" data-region="south">
+        <a href="destination-takeo.html" class="dest-card-link" aria-label="Explore Takeo">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/takeo.png" alt="">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">South</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Takeo</h3>
+              <p class="dest-tagline">Riverside heritage and ancient temples</p>
+            </div>
+            <p class="dest-desc">Situated between the Phnom Penh captial, and the refreshing destination of Kep and Kampot, Takeo is home to some notable excellent
+              historical sites.
+            </p>
+            <div class="dest-highlights">
+              <span>Ta Prom Tonle Bati</span>
+              <span>Phnom Chisor</span>
+              <span>Phnom Da</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- KOH KONG -->
+      <article class="dest-card reveal" data-region="south">
+        <a href="destination-koh-kong.html" class="dest-card-link" aria-label="Explore Koh Kong">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/kohkong.png" alt="Cardamom Mountains and jungle waterways in Koh Kong">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">South &amp; Coast</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Koh Kong</h3>
+              <p class="dest-tagline">Cardamom mountains and wild nature</p>
+            </div>
+            <p class="dest-desc">An eco-adventure province bordering Thailand, home to the vast Cardamom Mountains, mangrove kayaking, pristine jungle waterfalls, and raw unspoiled coastline.</p>
+            <div class="dest-highlights">
+              <span>Cardamom Mountains</span>
+              <span>Mangrove Tours</span>
+              <span>Waterfalls</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- PREAH VIHEAR -->
+      <article class="dest-card reveal" data-region="north">
+        <a href="destination-preah-vihear.html" class="dest-card-link" aria-label="Explore Preah Vihear">
+          <div class="dest-photo-wrap">
+            <img src="./images/destinations/preahvihear.png" alt="Preah Vihear clifftop temple overlooking the plains">
+            <div class="dest-photo-overlay"></div>
+            <span class="dest-region-badge">North</span>
+          </div>
+          <div class="dest-card-body">
+            <div class="dest-card-top">
+              <h3 class="dest-name">Preah Vihear</h3>
+              <p class="dest-tagline">Ancient clifftop temple above the clouds</p>
+            </div>
+            <p class="dest-desc">Best known for the UNESCO-listed Prasat Preah Vihear perched dramatically on the Dangrek escarpment, offering breathtaking cliffside views over the Cambodian plains.</p>
+            <div class="dest-highlights">
+              <span>Prasat Preah Vihear</span>
+              <span>Cliff Views</span>
+              <span>Off the Beaten Path</span>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-explore">Explore <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+    </div><!-- /.dest-grid -->
+
+    <!-- NO RESULTS MESSAGE -->
+    <div class="no-results" id="no-results" aria-live="polite" hidden>
+      <p>No destinations found for this region filter.</p>
+    </div>
+
+  </section>
+
+  <!-- BOTTOM CTA BANNER -->
+  <section class="dest-cta-section">
+    <div class="dest-cta-card reveal">
+      <div class="dest-cta-content">
+        <p class="eyebrow">Ready to explore?</p>
+        <h2>Plan your Cambodia trip with our guides</h2>
+        <p>Learn about the best time to visit, how to get around, local food, and practical travel tips before you go.</p>
+        <div class="dest-cta-actions">
+          <a href="travel-guide.html" class="btn btn-primary">Read Travel Guide</a>
+          <a href="food.html" class="btn btn-secondary">Explore Khmer Food</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-main">
+      <div class="footer-brand-block reveal">
+        <p class="footer-eyebrow">Kamsan</p>
+        <h2 class="footer-title">Travel Cambodia with a calmer, clearer guide.</h2>
+        <p class="footer-summary">
+          Discover destinations, Khmer food, local experiences, and practical travel advice in one warm, easy-to-use place.
+        </p>
+        <div class="footer-badges" aria-label="Kamsan highlights">
+          <span>Destinations</span>
+          <span>Khmer Food</span>
+          <span>Travel Tips</span>
+        </div>
+      </div>
+
+      <div class="footer-nav-block reveal">
+        <p class="footer-label">Explore</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="food.html">Food</a>
+          <a href="things-to-do.html">Things to Do</a>
+          <a href="travel-guide.html">Travel Guide</a>
+          <a href="contact.html">About &amp; Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2026 Kamsan. Created for the Web Development I final project at the American University of Phnom Penh.</p>
+      <a href="contact.html" class="btn btn-secondary footer-contact">Get in touch</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Region filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const destCards = document.querySelectorAll('.dest-card');
+  const noResults = document.getElementById('no-results');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const region = btn.dataset.region;
+      let visible = 0;
+
+      destCards.forEach(card => {
+        const match = region === 'all' || card.dataset.region === region;
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+
+      noResults.hidden = visible > 0;
+    });
+  });
+
+  // Only Phnom Penh detail page exists for now; keep other cards view-only.
+  document.querySelectorAll('.dest-card-link').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    if (href !== 'destination-phnom-penh.html') {
+      link.classList.add('is-view-only');
+      link.setAttribute('aria-disabled', 'true');
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+      });
+    }
+  });
+</script>
+</body>
+</html>

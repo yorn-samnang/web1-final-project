@@ -1,0 +1,320 @@
+.contact-page {
+  padding: 8px 0 40px;
+}
+
+.contact-page section {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.contact-kicker {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(23, 55, 57, 0.62);
+  font-weight: 700;
+}
+
+.contact-hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 26px;
+  align-items: stretch;
+  padding-top: 26px;
+}
+
+.contact-hero-content,
+.contact-quick-info {
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(226, 190, 114, 0.16), transparent 40%),
+    linear-gradient(180deg, rgba(253, 249, 241, 0.9), rgba(235, 246, 243, 0.72));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    0 20px 42px rgba(97, 135, 137, 0.14);
+}
+
+.contact-hero-content {
+  padding: 34px 34px 30px;
+}
+
+.contact-hero-content h1 {
+  margin: 0 0 14px;
+  font-size: clamp(1.85rem, 3.7vw, 3rem);
+  line-height: 1.12;
+  color: #133739;
+}
+
+.contact-hero-content p {
+  margin: 0;
+  max-width: 67ch;
+  color: rgba(19, 55, 57, 0.8);
+  line-height: 1.66;
+}
+
+.hero-badges {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-badges span {
+  padding: 8px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(35, 67, 70, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(239, 249, 247, 0.78));
+  font-size: 0.86rem;
+  color: #173739;
+  font-weight: 600;
+}
+
+.contact-quick-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-quick-info::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -40px;
+  right: -26px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(158, 214, 207, 0.32), transparent 70%);
+  pointer-events: none;
+}
+
+.quick-info-label,
+.contact-quick-info h2,
+.quick-info-intro,
+.quick-info-list,
+.quick-info-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.quick-info-label {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(23, 55, 57, 0.62);
+  font-weight: 700;
+}
+
+.contact-quick-info h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.7vw, 1.8rem);
+  line-height: 1.2;
+  color: #123436;
+}
+
+.quick-info-intro {
+  margin: 12px 0 18px;
+  color: rgba(23, 55, 57, 0.78);
+  line-height: 1.58;
+}
+
+.quick-info-list {
+  display: grid;
+  gap: 10px;
+}
+
+.quick-info-item {
+  border: 1px solid rgba(35, 67, 70, 0.11);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 249, 247, 0.84));
+}
+
+.quick-info-title {
+  margin: 0 0 4px;
+  color: rgba(23, 55, 57, 0.64);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.quick-info-item a,
+.quick-info-item p {
+  margin: 0;
+  color: #12393a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-info-item a:hover,
+.quick-info-item a:focus-visible {
+  text-decoration: underline;
+}
+
+.quick-info-actions {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quick-info-actions .btn {
+  flex: 1 1 160px;
+  text-align: center;
+}
+
+.contact-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding-top: 20px;
+}
+
+.info-card {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(236, 247, 244, 0.8));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 14px 28px rgba(107, 141, 144, 0.14);
+}
+
+.info-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #12393a;
+}
+
+.info-card p {
+  margin: 0;
+  color: rgba(23, 55, 57, 0.78);
+  line-height: 1.62;
+}
+
+.contact-form-section {
+  margin-top: 8px;
+  padding-top: 26px;
+}
+
+.contact-form-header {
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+.contact-form-header h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 3.1vw, 2.4rem);
+  color: #123738;
+}
+
+.contact-form-header p {
+  margin: 0;
+  color: rgba(23, 55, 57, 0.75);
+  line-height: 1.62;
+}
+
+.contact-form {
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 28px;
+  padding: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(173, 222, 218, 0.16), transparent 44%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(236, 247, 244, 0.8));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    0 22px 40px rgba(106, 140, 143, 0.12);
+  display: grid;
+  gap: 16px;
+}
+
+.field-row {
+  display: grid;
+  gap: 8px;
+}
+
+.field-row label {
+  font-weight: 600;
+  color: #163b3c;
+  font-size: 0.95rem;
+}
+
+.field-row input,
+.field-row select,
+.field-row textarea {
+  width: 100%;
+  border: 1px solid rgba(35, 67, 70, 0.18);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: #163738;
+  background: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.field-row textarea {
+  resize: vertical;
+  min-height: 138px;
+}
+
+.field-row input:focus,
+.field-row select:focus,
+.field-row textarea:focus {
+  outline: none;
+  border-color: rgba(23, 55, 57, 0.4);
+  box-shadow: 0 0 0 4px rgba(23, 55, 57, 0.12);
+  background: #fff;
+}
+
+.contact-form .btn {
+  justify-self: start;
+}
+
+@media (max-width: 980px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .quick-info-actions .btn {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-page {
+    padding-top: 0;
+  }
+
+  .contact-hero-content,
+  .contact-quick-info,
+  .contact-form {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .quick-info-actions {
+    flex-direction: column;
+  }
+
+  .quick-info-actions .btn {
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
