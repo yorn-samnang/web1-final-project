@@ -522,7 +522,7 @@ form button:not(.nav-toggle):focus-visible {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.82) 36%, rgba(255, 255, 255, 0.22) 64%, rgba(255, 255, 255, 0.08) 100%),
     linear-gradient(180deg, rgba(245, 251, 250, 0.18), rgba(245, 251, 250, 0.34)),
-    url("../images/travel-guide/travel-guide-hero.jpg") center/cover no-repeat;
+    url("../images/things-to-do/koh-rong-sanloem.png") center/cover no-repeat;
 }
 
 .hero-actions {
