@@ -287,6 +287,13 @@
   }
 }
 
+@media (max-width: 760px) {
+  .quick-info-actions .btn {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .contact-page {
     padding-top: 0;
@@ -301,5 +308,13 @@
 
   .quick-info-actions {
     flex-direction: column;
+  }
+
+  .quick-info-actions .btn {
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    width: 100%;
   }
 }
