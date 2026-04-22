@@ -1,3 +1,5 @@
+@import url("./global.css");
+
 :root {
   --bg-page: #ffffff;
   --surface-border: rgba(255, 255, 255, 0.7);
@@ -157,6 +159,10 @@ header {
   width: 50px;
   height: 50px;
   padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.42));
@@ -171,7 +177,7 @@ header {
   display: block;
   width: 18px;
   height: 2px;
-  margin: 4px auto;
+  margin: 0;
   border-radius: 999px;
   background: #173739;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -226,11 +232,10 @@ header {
   outline-offset: 2px;
 }
 
-section {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 40px 24px 64px;
-}
+/* ============================================================
+   HOME PAGE STYLES — Kamsan Cambodia Travel Guide
+   Imports shared global styles first
+   ============================================================ */
 
 .card {
   border: 1px solid rgba(23, 55, 57, 0.08);
@@ -1108,7 +1113,7 @@ form button:not(.nav-toggle):focus-visible {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   body { padding-top: 86px; }
 
   header { padding: 0; }
@@ -1181,7 +1186,7 @@ form button:not(.nav-toggle):focus-visible {
   }
 
   .nav-pill.menu-open .nav-toggle span:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
 
   .nav-pill.menu-open .nav-toggle span:nth-child(2) {
@@ -1189,6 +1194,6 @@ form button:not(.nav-toggle):focus-visible {
   }
 
   .nav-pill.menu-open .nav-toggle span:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
   }
 }
