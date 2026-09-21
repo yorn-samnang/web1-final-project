@@ -1,0 +1,24 @@
+{
+  "name": "web1-final-project",
+  "version": "1.0.0",
+  "description": "Kamsan is a multi-page static website built for a Web Development I final project at the American University of Phnom Penh. The site presents Cambodia as a travel destination through curated sections for destinations, food, activities, travel planning, and contact information.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yorn-samnang/web1-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yorn-samnang/web1-final-project/issues"
+  },
+  "homepage": "https://github.com/yorn-samnang/web1-final-project#readme"
+}
