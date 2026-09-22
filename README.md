@@ -1,119 +1,77 @@
-# Kamsan Cambodia Travel Guide
+# Kamsan — Cambodia Travel Guide
 
-Kamsan is a multi-page static website built for a Web Development I final project at the American University of Phnom Penh. The site presents Cambodia as a travel destination through curated sections for destinations, food, activities, travel planning, and contact information.
+Kamsan is a Web Development II final project for the American University of Phnom Penh. It extends a six-page Web I travel website into an interactive travel-planning application for visitors to Cambodia.
 
-## Project Overview
+## Project Goals
 
-The project is designed as a lightweight front-end website using only HTML, CSS, and vanilla JavaScript. It focuses on:
-
-- a responsive multi-page layout
-- a shared navigation bar and footer across all pages
-- a warm glass-style visual theme inspired by travel and hospitality
-- consistent button, card, and typography styling
+The application helps tourists explore Cambodian destinations, food, activities, culture, and practical travel information. It will use vanilla JavaScript to add dynamic client-side features while keeping the existing responsive HTML and CSS experience.
 
 ## Pages
 
-- `index.html`  
-  Homepage with a hero section, trip planner form, feature cards, and a travel guide call-to-action.
+- `index.html` — home page, trip planner, and optional recommendation quiz
+- `destinations.html` — destination discovery, weather, search, and favorites
+- `food.html` — Khmer food browsing and filtering
+- `things-to-do.html` — activity discovery and filtering
+- `travel-guide.html` — transport, timing, and practical visitor guidance
+- `contact.html` — visitor contact and project information
 
-- `destinations.html`  
-  Destination overview page with starter cards for places such as Siem Reap, Koh Rong, and Kampot.
+## Planned Web II Features
 
-- `food.html`  
-  Khmer food highlights page with sample dishes including Amok, Lok Lak, and Nom Banh Chok.
+- Current weather for Phnom Penh, Siem Reap, Kampot, and Koh Rong via Open-Meteo
+- Tourist review CRUD using JSONPlaceholder (`GET`, `POST`, `PUT`, and `DELETE`)
+- Immediate search and filtering for destinations, food, and activities
+- Browser-persisted favorite destinations with `localStorage`
+- A trip planner where visitors can add, remove, and rearrange destinations and activities
+- An optional travel-recommendation quiz
+- Loading states, error messages, form validation, and accessible DOM updates
 
-- `things-to-do.html`  
-  Activities page with starter content for sightseeing, beaches, and culture-focused experiences.
+Open-Meteo and JSONPlaceholder do not require an API key for the planned basic use. JSONPlaceholder is a demonstration API, so review updates are reflected in the browser but are not permanently stored by the service.
 
-- `travel-guide.html`  
-  Practical travel page with quick sections for transportation, timing, and tips.
+## Technology
 
-- `contact.html`  
-  Basic contact form page for visitor inquiries.
+- HTML5 and semantic markup
+- CSS3 and responsive design
+- Vanilla JavaScript (ES6+)
+- `fetch()` and `async`/`await`
+- Browser APIs: DOM, events, `localStorage`, and `IntersectionObserver`
 
-## Features
-
-- Shared responsive navigation with mobile menu toggle
-- Custom logo treatment in the navbar
-- Elegant Glass button system with primary and secondary variants
-- Redesigned themed footer reused across all pages
-- Reusable card and section layout styles
-- Hero background image and branded color system
-
-## Tech Stack
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
-
-No framework, package manager, or build step is required.
+Node.js is used only for development tooling; there is no application build step or runtime server.
 
 ## Project Structure
 
 ```text
 web1-final-project/
-|-- index.html
-|-- destinations.html
-|-- food.html
-|-- things-to-do.html
-|-- travel-guide.html
-|-- contact.html
-|-- README.md
-|-- css/
-|   `-- style.css
-|-- js/
-|   `-- main.js
-|-- images/
-|   |-- angkorwat.jpg
-|   `-- kamsan-logo.png
-`-- doc/
-    `-- Final Project Proposal.pdf
+├── css/                 # page and shared styles
+├── doc/                 # proposal and course documents
+├── images/              # website images
+├── js/
+│   ├── features/        # weather, reviews, favorites, planner, filters, quiz
+│   ├── services/        # Open-Meteo and JSONPlaceholder requests
+│   ├── ui/              # shared navigation and interaction helpers
+│   ├── utils/           # DOM, validation, and reveal helpers
+│   └── main-*.js        # page entry points
+├── tests/               # Jest tests
+└── .github/workflows/   # CI checks
 ```
 
-## Design Notes
+## Local Development
 
-The current interface uses a shared visual system built around:
-
-- ivory, teal, and seafoam gradients
-- soft glassmorphism surfaces
-- rounded cards and pill-shaped navigation
-- reusable button classes: `btn`, `btn-primary`, and `btn-secondary`
-
-Most of the visual styling is centralized in `css/style.css`, making it easier to keep the pages consistent.
-
-## JavaScript Behavior
-
-The only JavaScript file is `js/main.js`. It handles the mobile navigation menu by:
-
-- toggling the menu open and closed
-- updating `aria-expanded` for accessibility
-- closing the menu after a nav link is clicked
-- resetting the mobile menu when the viewport becomes wide again
-
-## How to Run Locally
-
-Using a local server is recommended for cleaner testing and navigation.
+Use Node 20 to match CI. If you use a version manager, `.nvmrc` selects it.
 
 ```bash
+npm ci
+npm run check
 python -m http.server
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:8000` in a browser. Run the check command before committing:
 
-## Current Limitations
+```bash
+npm run check
+```
 
-- Several inner pages still use simple placeholder card content rather than fully developed sections.
-- The contact form is presentational only and does not submit data to a backend.
-- There is no database, authentication, or CMS integration.
+It verifies Prettier formatting, ESLint rules, and Jest tests. A pre-commit hook runs the same command. GitHub Actions runs these checks, a high-severity dependency audit, and a secret scan on pull requests and pushes to `main`.
 
-## Future Improvements
+## Project Status
 
-- Expand the content on each destination and guide page
-- Add form validation and backend handling for contact submissions
-- Improve semantic structure and SEO metadata in the HTML `<head>`
-- Add more images and richer travel content
-- Introduce active-state handling for footer links and deeper navigation patterns
-
-## Course Context
-
-This repository includes a proposal document in `doc/Final Project Proposal.pdf`, which supports the final project submission context.
+The static pages and shared client-side interactions are in place. The Web II feature modules are organized in `js/` and are the next development phase; API integration, CRUD, persistence, and the remaining interactive features still need implementation.
