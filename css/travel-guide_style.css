@@ -2,7 +2,7 @@
    TRAVEL GUIDE PAGE STYLES — Kamsan Cambodia Travel Guide
    Imports shared global styles first
    ============================================================ */
-@import url("./global.css");
+@import url('./global.css');
 
 /* ============================================================
    TRAVEL GUIDE PAGE SPECIFIC STYLES
@@ -125,9 +125,15 @@
   display: flex;
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(7, 26, 28, 0.84) 0%, rgba(7, 26, 28, 0.68) 30%, rgba(7, 26, 28, 0.26) 62%, rgba(7, 26, 28, 0.08) 100%),
+    linear-gradient(
+      90deg,
+      rgba(7, 26, 28, 0.84) 0%,
+      rgba(7, 26, 28, 0.68) 30%,
+      rgba(7, 26, 28, 0.26) 62%,
+      rgba(7, 26, 28, 0.08) 100%
+    ),
     radial-gradient(circle at center left, rgba(17, 49, 51, 0.24), transparent 42%),
-    url("../images/travel-guide/travel-guide-hero.jpg") center center / cover no-repeat;
+    url('../images/travel-guide/travel-guide-hero.jpg') center center / cover no-repeat;
   box-shadow: 0 24px 60px rgba(70, 109, 112, 0.14);
   border: 1px solid rgba(23, 55, 57, 0.08);
 }
@@ -216,7 +222,11 @@
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(23, 55, 57, 0.06);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.96);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease;
 }
 
 .guide-anchor-nav a:hover,
@@ -238,7 +248,10 @@
 .tip-item,
 .footer-nav-block,
 .video-section-shell {
-  transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+  transition:
+    transform 0.32s ease,
+    box-shadow 0.32s ease,
+    border-color 0.32s ease;
 }
 
 .season-image-card:hover,
@@ -647,8 +660,7 @@
 .video-section-shell {
   border-radius: 36px;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(12, 40, 42, 0.96), rgba(19, 56, 59, 0.92));
+  background: linear-gradient(180deg, rgba(12, 40, 42, 0.96), rgba(19, 56, 59, 0.92));
   box-shadow: 0 24px 56px rgba(17, 40, 42, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -731,7 +743,7 @@
 }
 
 .tip-item summary::after {
-  content: "+";
+  content: '+';
   position: absolute;
   right: 22px;
   top: 50%;
@@ -741,7 +753,7 @@
 }
 
 .tip-item[open] summary::after {
-  content: "−";
+  content: '−';
 }
 
 .tip-content {
@@ -867,7 +879,10 @@
   color: rgba(23, 55, 57, 0.76);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .footer-links a:hover,
@@ -988,7 +1003,7 @@
     min-width: 132px;
     width: 132px;
     height: 42px;
-    background: url("../images/travel-guide/kamsan-logo.png") center / contain no-repeat;
+    background: url('../images/travel-guide/kamsan-logo.png') center / contain no-repeat;
     text-align: left;
   }
 
@@ -1059,8 +1074,13 @@
     border-radius: 28px;
     align-items: flex-end;
     background:
-      linear-gradient(180deg, rgba(7, 26, 28, 0.72) 0%, rgba(7, 26, 28, 0.54) 46%, rgba(7, 26, 28, 0.24) 100%),
-      url("../images/travel-guide/travel-guide-hero.jpg") center / cover no-repeat;
+      linear-gradient(
+        180deg,
+        rgba(7, 26, 28, 0.72) 0%,
+        rgba(7, 26, 28, 0.54) 46%,
+        rgba(7, 26, 28, 0.24) 100%
+      ),
+      url('../images/travel-guide/travel-guide-hero.jpg') center / cover no-repeat;
   }
 
   .travel-guide-hero-content {

@@ -1,13 +1,19 @@
 {
   "name": "web1-final-project",
   "version": "1.0.0",
-  "description": "Kamsan is a multi-page static website built for a Web Development I final project at the American University of Phnom Penh. The site presents Cambodia as a travel destination through curated sections for destinations, food, activities, travel planning, and contact information.",
+  "description": "Kamsan is a Web Development II travel-planning application for tourists exploring Cambodia.",
   "main": "index.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky",
+    "lint": "eslint \"js/**/*.js\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "check": "npm run format:check && npm run lint && npm test"
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,13 @@
   "bugs": {
     "url": "https://github.com/yorn-samnang/web1-final-project/issues"
   },
-  "homepage": "https://github.com/yorn-samnang/web1-final-project#readme"
+  "homepage": "https://github.com/yorn-samnang/web1-final-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "eslint": "^10.11.0",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "prettier": "^3.9.8"
+  }
 }
