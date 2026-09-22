@@ -1,13 +1,15 @@
 /** @type {import('eslint').Linter.Config[]} */
-module.exports = [
+export default [
   {
     files: ['js/**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'script',
+      sourceType: 'module',
       globals: {
         document: 'readonly',
+        fetch: 'readonly',
         IntersectionObserver: 'readonly',
+        URLSearchParams: 'readonly',
         window: 'readonly',
         setTimeout: 'readonly',
         requestAnimationFrame: 'readonly',

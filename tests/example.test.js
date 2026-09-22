@@ -1,8 +1,8 @@
-function loadMainScript() {
+import { jest } from '@jest/globals';
+
+async function loadMainScript() {
   jest.resetModules();
-  jest.isolateModules(() => {
-    require('../js/main.js');
-  });
+  await import('../js/main.js');
   document.dispatchEvent(new Event('DOMContentLoaded'));
 }
 
@@ -16,8 +16,8 @@ describe('site navigation', () => {
     `;
   });
 
-  test('opens and closes the mobile navigation menu', () => {
-    loadMainScript();
+  test('opens and closes the mobile navigation menu', async () => {
+    await loadMainScript();
 
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav-pill');
@@ -31,8 +31,8 @@ describe('site navigation', () => {
     expect(toggle.getAttribute('aria-expanded')).toBe('false');
   });
 
-  test('closes the mobile navigation after a navigation link is clicked', () => {
-    loadMainScript();
+  test('closes the mobile navigation after a navigation link is clicked', async () => {
+    await loadMainScript();
 
     const toggle = document.querySelector('.nav-toggle');
     const navLink = document.querySelector('.site-nav a');
