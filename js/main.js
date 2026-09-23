@@ -48,34 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach((el) => showReveal(el));
   }
 
-  /* 3. DISH FILTER TABS */
-  const filterPills = document.querySelectorAll('.filter-pill');
-  const foodCards = document.querySelectorAll('.food-photo-card[data-category]');
-
-  filterPills.forEach((pill) => {
-    pill.addEventListener('click', () => {
-      filterPills.forEach((p) => p.classList.remove('active'));
-      pill.classList.add('active');
-
-      const filter = pill.dataset.filter;
-
-      foodCards.forEach((card) => {
-        const matches = filter === 'all' || card.dataset.category === filter;
-
-        if (matches) {
-          card.style.display = '';
-          card.classList.remove('is-visible');
-          card.classList.remove('in-view');
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => showReveal(card));
-          });
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
   /* 4. SMOOTH SCROLL */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {

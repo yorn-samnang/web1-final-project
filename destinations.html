@@ -705,42 +705,7 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script>
-      // Region filter logic
-      const filterBtns = document.querySelectorAll('.filter-btn');
-      const destCards = document.querySelectorAll('.dest-card');
-      const noResults = document.getElementById('no-results');
-
-      filterBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          filterBtns.forEach((b) => b.classList.remove('active'));
-          btn.classList.add('active');
-
-          const region = btn.dataset.region;
-          let visible = 0;
-
-          destCards.forEach((card) => {
-            const match = region === 'all' || card.dataset.region === region;
-            card.style.display = match ? '' : 'none';
-            if (match) visible++;
-          });
-
-          noResults.hidden = visible > 0;
-        });
-      });
-
-      // Only Phnom Penh detail page exists for now; keep other cards view-only.
-      document.querySelectorAll('.dest-card-link').forEach((link) => {
-        const href = link.getAttribute('href') || '';
-        if (href !== 'destination-phnom-penh.html') {
-          link.classList.add('is-view-only');
-          link.setAttribute('aria-disabled', 'true');
-          link.addEventListener('click', (event) => {
-            event.preventDefault();
-          });
-        }
-      });
-    </script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main-destinations.js"></script>
   </body>
 </html>
